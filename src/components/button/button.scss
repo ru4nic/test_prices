@@ -1,0 +1,67 @@
+@import '../../styles/theme.scss';
+
+button {
+  height: 3.25em;
+  width: 9.5em;
+  border-radius: 7px;
+  color: map-get($text, white);
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+}
+.card {
+  &__btn {
+    background-color: transparent;
+    padding: 8.64px 13.82px;
+    border: 0.86px solid rgba(208, 208, 208, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.78em;
+    align-items: center;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: map-get($backgrounds, greenCard);
+    }
+    &-red {
+      &:hover {
+        color: white;
+      }
+    }
+    &-icon-wrapper {
+      background-color: rgba(255, 255, 255, 0.6);
+      width: 1.3em;
+      height: 1.3em;
+      border-radius: 50%;
+      position: relative;
+    }
+    &-icon {
+      background: url('../../assets/icons/button_arrow.svg') no-repeat;
+      background-size: contain;
+      width: 0.4em;
+      height: 0.55em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.dropdown {
+  .menu__btn-red {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    &:hover {
+      background-color: map-get($backgrounds, darkCard);
+    }
+  }
+}
+
+[class$='__btn-red'] {
+  background-color: map-get($backgrounds, redButton);
+  border: 0.86px solid rgba(214, 101, 103, 1);
+  &:hover {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../styles/theme.scss';
+
+.logo {
+  color: map-get($text, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: line-through;
+  gap: 3.61px;
+  margin-right: 87.23px;
+  @media screen and (max-width: 1070px) {
+    // align-self: start;
+  }
+  & > div:first-child {
+    background: url('../../../assets/icons/logo.svg');
+    height: 15.66px;
+    width: 23.49px;
+  }
+  & > div:last-child {
+    width: max-content;
+  }
+}

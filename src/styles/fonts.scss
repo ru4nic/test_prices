@@ -1,0 +1,63 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter400';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/woff2/inter-v13-latin-regular.woff2')
+    format('woff2');
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/assets/fonts/woff2/inter-v13-latin-500.woff2') format('woff2');
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter600';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/src/assets/fonts/woff2/inter-v13-latin-600.woff2') format('woff2');
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter700';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/assets/fonts/woff2/inter-v13-latin-700.woff2') format('woff2');
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter800';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/src/assets/fonts/woff2/inter-v13-latin-800.woff2') format('woff2');
+}
+
+@mixin font($weight: 400) {
+  @if $weight == 400 {
+    font-family: Inter400;
+  }
+  @if $weight == 500 {
+    font-family: 'Inter500';
+  }
+  @if $weight == 600 {
+    font-family: 'Inter600';
+  }
+  @if $weight == 700 {
+    font-family: 'Inter700';
+  }
+  @if $weight == 800 {
+    font-family: 'Inter800';
+  }
+}

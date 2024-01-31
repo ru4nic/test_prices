@@ -1,0 +1,16 @@
+$backgrounds: (
+  body: linear-gradient(rgba(54, 96, 62, 1), rgba(30, 38, 44, 1)),
+  greenCard: rgba(106, 153, 78, 1),
+  darkCard: rgba(29, 37, 43, 1),
+  redButton: rgba(188, 71, 73, 1),
+);
+
+$text: (
+  white: #ffffff,
+  grey: rgba(255, 255, 255, 0.8),
+);
+$animation: (
+  opacityTransition: opacity 0.2s ease-in-out,
+  opacity: 0.8,
+  colorTransition: color 0.2s ease-in-out,
+);
